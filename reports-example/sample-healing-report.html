@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healing Evaluation Report - session_1771963314229_unpjlvfk7</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 30px; text-align: center; }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .header p { font-size: 1.2em; opacity: 0.9; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        .stat-card h3 { color: #667eea; margin-bottom: 10px; font-size: 1.1em; }
+        .stat-card .value { font-size: 2em; font-weight: bold; color: #333; }
+        .stat-card .label { color: #666; font-size: 0.9em; margin-top: 5px; }
+        .section { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        .section h2 { color: #667eea; margin-bottom: 20px; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
+        .strategy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .strategy-card { background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #667eea; }
+        .strategy-card h4 { color: #333; margin-bottom: 10px; }
+        .metric-row { display: flex; justify-content: space-between; margin: 8px 0; }
+        .quality-distribution { display: flex; gap: 10px; margin-top: 15px; }
+        .quality-bar { flex: 1; text-align: center; }
+        .quality-bar .bar { height: 60px; background: #e9ecef; border-radius: 5px; position: relative; margin-bottom: 5px; }
+        .quality-bar .fill { position: absolute; bottom: 0; left: 0; right: 0; border-radius: 5px; }
+        .quality-bar .excellent .fill { background: #28a745; }
+        .quality-bar .good .fill { background: #17a2b8; }
+        .quality-bar .fair .fill { background: #ffc107; }
+        .quality-bar .poor .fill { background: #dc3545; }
+        .quality-bar .count { font-weight: bold; color: #333; }
+        .quality-bar .label { font-size: 0.8em; color: #666; }
+        .recommendations { background: #e7f3ff; border-left: 4px solid #007bff; padding: 20px; border-radius: 5px; }
+        .recommendations ul { margin-left: 20px; }
+        .recommendations li { margin: 8px 0; }
+        .evaluations-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .evaluations-table th, .evaluations-table td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        .evaluations-table th { background: #f8f9fa; font-weight: 600; color: #333; }
+        .evaluations-table tr:hover { background: #f5f5f5; }
+        .success { color: #28a745; font-weight: bold; }
+        .failure { color: #dc3545; font-weight: bold; }
+        .scenario-name { font-weight: 600; color: #2c3e50; max-width: 250px; word-wrap: break-word; }
+        .timestamp { font-size: 0.8em; color: #666; }
+        .cost { font-family: monospace; }
+        .quality-score { font-weight: bold; }
+        .excellent-score { color: #28a745; }
+        .good-score { color: #17a2b8; }
+        .fair-score { color: #ffc107; }
+        .poor-score { color: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Healing Evaluation Report</h1>
+            <p>Session ID: session_1771963314229_unpjlvfk7</p>
+            <p>Generated on 2/24/2026, 2:02:14 PM</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Attempts</h3>
+                <div class="value">1</div>
+                <div class="label">Healing attempts made</div>
+            </div>
+            <div class="stat-card">
+                <h3>Success Rate</h3>
+                <div class="value">100.0%</div>
+                <div class="label">Successful healings</div>
+            </div>
+            <div class="stat-card">
+                <h3>Total Cost</h3>
+                <div class="value">$0.0000</div>
+                <div class="label">Total cost incurred</div>
+            </div>
+            <div class="stat-card">
+                <h3>Total Tokens</h3>
+                <div class="value">69</div>
+                <div class="label">Tokens consumed</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📊 Quality Distribution</h2>
+            <div class="quality-distribution">
+                <div class="quality-bar excellent">
+                    <div class="bar">
+                        <div class="fill" style="height: 100%"></div>
+                    </div>
+                    <div class="count">1</div>
+                    <div class="label">Excellent<br>(80%+)</div>
+                </div>
+                <div class="quality-bar good">
+                    <div class="bar">
+                        <div class="fill" style="height: 0%"></div>
+                    </div>
+                    <div class="count">0</div>
+                    <div class="label">Good<br>(60-79%)</div>
+                </div>
+                <div class="quality-bar fair">
+                    <div class="bar">
+                        <div class="fill" style="height: 0%"></div>
+                    </div>
+                    <div class="count">0</div>
+                    <div class="label">Fair<br>(40-59%)</div>
+                </div>
+                <div class="quality-bar poor">
+                    <div class="bar">
+                        <div class="fill" style="height: 0%"></div>
+                    </div>
+                    <div class="count">0</div>
+                    <div class="label">Poor<br>(<40%)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🚀 Strategy Performance</h2>
+            <div class="strategy-grid">
+                
+                    <div class="strategy-card">
+                        <h4>CDP</h4>
+                        <div class="metric-row">
+                            <span>Attempts:</span>
+                            <span>1</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Success Rate:</span>
+                            <span>100.0%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Total Cost:</span>
+                            <span class="cost">$0.0000</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Avg Quality:</span>
+                            <span>89.5%</span>
+                        </div>
+                    </div>
+                
+                    <div class="strategy-card">
+                        <h4>SCREENSHOT</h4>
+                        <div class="metric-row">
+                            <span>Attempts:</span>
+                            <span>0</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Success Rate:</span>
+                            <span>0.0%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Total Cost:</span>
+                            <span class="cost">$0.0000</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Avg Quality:</span>
+                            <span>0.0%</span>
+                        </div>
+                    </div>
+                
+                    <div class="strategy-card">
+                        <h4>INTERACTION</h4>
+                        <div class="metric-row">
+                            <span>Attempts:</span>
+                            <span>0</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Success Rate:</span>
+                            <span>0.0%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Total Cost:</span>
+                            <span class="cost">$0.0000</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Avg Quality:</span>
+                            <span>0.0%</span>
+                        </div>
+                    </div>
+                
+                    <div class="strategy-card">
+                        <h4>HISTORY</h4>
+                        <div class="metric-row">
+                            <span>Attempts:</span>
+                            <span>0</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Success Rate:</span>
+                            <span>0.0%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Total Cost:</span>
+                            <span class="cost">$0.0000</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Avg Quality:</span>
+                            <span>0.0%</span>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💡 Recommendations</h2>
+            <div class="recommendations">
+                <ul>
+                    <li>All systems performing well - continue monitoring</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📋 Detailed Evaluations</h2>
+            <table class="evaluations-table">
+                <thead>
+                    <tr>
+                        <th>Scenario</th>
+                        <th>Timestamp</th>
+                        <th>Strategy</th>
+                        <th>Success</th>
+                        <th>Quality Score</th>
+                        <th>Tokens</th>
+                        <th>Cost</th>
+                        <th>Execution Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr>
+                            <td class="scenario-name">Playwright - Find an Agent</td>
+                            <td class="timestamp">2/24/2026, 2:02:12 PM</td>
+                            <td>CDP</td>
+                            <td class="success">
+                                ✅ Success
+                            </td>
+                            <td class="quality-score excellent-score">
+                                89.5%
+                            </td>
+                            <td>69</td>
+                            <td class="cost">$0.0000</td>
+                            <td>10987ms</td>
+                        </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
